@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.blazedemo.testscript.PurchaseFilghtModule"/>
+      <class name="com.blazedemo.testscript.NewClass"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
