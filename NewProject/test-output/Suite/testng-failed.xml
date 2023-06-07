@@ -4,6 +4,22 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.blazedemo.testscript.NewClass"/>
+      <class name="com.blazedemo.testscript.DemoActi"/>
     </classes>
   </test> <!-- Test -->
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="com.blazedemo.testscript.DemoActi">
+        <methods>
+          <include name="testDemo"/>
+        </methods>
+      </class> <!-- com.blazedemo.testscript.DemoActi -->
+      <class name="com.blazedemo.testscript.NewClass">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="testNewClass"/>
+        </methods>
+      </class> <!-- com.blazedemo.testscript.NewClass -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
