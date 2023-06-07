@@ -24,7 +24,7 @@ public class BaseClass {
 	@Parameters("browser")
 	@BeforeTest
 	public void openBrowser(String browser) throws IOException {
-	//	Reporter.log("openBrowser",true);
+		Reporter.log("openBrowser",true);
 		FileLib f=new FileLib();
 		String s = f.getPropertyData("url");
 		if(browser.equals("chrome")) {
@@ -51,7 +51,7 @@ public class BaseClass {
 	}
 	@AfterTest
 	public void closeBrowser() {
-	//	Reporter.log("closebrowser",true);
+	Reporter.log("closebrowser",true);
 		driver.close();
 	}
 
